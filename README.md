@@ -17,6 +17,58 @@ npm install dm-install -g
 
 ## Tasks
 
+### [phpComposer](tasks/phpComposer/index.js)
+* install php composer
+
+#### phpComposer global usage
+```
+dmi [phpComposer|phpc]
+```
+
+#### phpComposer programmatically usage
+```javascript
+var phpComposer = require("dm-install").phpComposer;
+var phpComposerResult = phpComposer.start();
+```
+
+#### phpComposer steps
+
+#### phpComposer features
+
+#### phpComposer config
+```javascript
+{
+    "phpComposer": {
+    }
+}
+```
+
+### [php](tasks/php/index.js)
+* install php
+
+#### php global usage
+```
+dmi [php]
+```
+
+#### php programmatically usage
+```javascript
+var php = require("dm-install").php;
+var phpResult = php.start();
+```
+
+#### php steps
+
+#### php features
+
+#### php config
+```javascript
+{
+    "php": {
+    }
+}
+```
+
 ### [docker](tasks/docker/index.js)
 * install docker
 

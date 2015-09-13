@@ -13,6 +13,16 @@ jobs.index = co.wrap(function*() {
 
         // automatically add tasks here
 
+        // =========== [ phpComposer ] ===========
+        else if (['phpComposer','phpc'].indexOf(argv2) > -1) {
+            var task = require("./tasks/phpComposer/index.js");
+            task.start();
+        }
+        // =========== [ php ] ===========
+        else if (['php'].indexOf(argv2) > -1) {
+            var task = require("./tasks/php/index.js");
+            task.start();
+        }
         // =========== [ docker ] ===========
         else if (['docker','docker'].indexOf(argv2) > -1) {
             var task = require("./tasks/docker/index.js");
